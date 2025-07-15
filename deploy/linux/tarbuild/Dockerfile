@@ -27,6 +27,7 @@ RUN strip --strip-unneeded /usr/local/lib/libpython3.9.so.1.0
 
 RUN apt-get update && apt-get install -y build-essential
 
+RUN pip3 install wheel scons
 RUN pip3 install setuptools-rust staticx
 
 FROM ubuntu:20.04
